@@ -1,0 +1,46 @@
+body {
+	padding : 0px;
+	margin : 0px;
+	background-color:black;
+	color:white;
+}
+.Logout {
+	float:right;
+	margin-top :-230px;
+}
+
+.Logout button {
+	background-color:green;
+	color:white;
+	border :none;
+	padding:10px;
+}
+
+.Data {
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.Feature {
+	float:right;
+	margin-top :-180px;
+}
+
+.Feature button {
+	background-color:blue;
+	color:white;
+	padding:10px;
+	border:none;
+	margin:5px;
+}
+
+.navBar button {
+	float:right;
+	margin-left:-200px;
+	background-color:green;
+	color:white;
+	padding:10px;
+	margin:5px;
+	border:none;
+	margin-top:20px;
+}

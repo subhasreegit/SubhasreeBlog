@@ -1,0 +1,28 @@
+body {
+	padding :0px;
+	margin :0px;
+	background-color:black;
+	color:white;
+}
+
+.blogAdding {
+	margin:20px;
+}
+.Logout button {
+	float:right;
+	margin-left:-200px;
+	background-color:green;
+	color:white;
+	padding:10px;
+	margin:5px;
+	border:none;
+	margin-top:20px;
+}
+
+#submit {
+	background-color:green;
+	color:white;
+	padding:10px;
+	border:none;
+	margin-top:20px;
+}
