@@ -1,0 +1,34 @@
+body {
+	margin :0px;
+	padding :0px;
+	background-color :grey;
+	color:white;
+}
+
+.container {
+	width : 100%;
+}
+
+.Header {
+	float : right;
+	text-align: center;
+}
+
+.Header button {
+	background-color: green;
+	color:white;
+	padding:10px;
+	margin:5px;
+	border : none;
+}
+
+.heading {
+	text-align: center;
+	margin-top : 50px;
+}
+
+.bodycontent {
+	display :block;
+	text-align: center;	
+	margin:50px;
+}

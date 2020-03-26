@@ -1,0 +1,35 @@
+body{
+  background-color:grey;
+  background-repeat: no-repeat;
+}
+.container{
+  width:100px;
+  height:100px;
+}
+.Login{
+  height:300px;
+  width:400px;
+  background-color:white;
+  padding:5px;
+  margin-left:500px;
+  box-shadow:10px 10px;
+  border-radius: 25px;
+  padding-left:30px;
+  margin-top:200px;
+}
+
+p{
+  font-size:40px;
+  text-align:center;
+}
+
+label{
+  font-size:20px;
+}
+
+#LogIn{
+  
+  background-color:green;
+  color:white;
+  height:30px;
+}
