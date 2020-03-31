@@ -1,8 +1,11 @@
 <?php
   session_start();
+
+  require '../../vendor/autoload.php';
+  use Model\blogAction.php;
   //include("./blogAction.php");
-  $address = "/var/www/html/Blog/MVC/Model/blogAction.php";
-  include($address);
+  /*$address = "/var/www/html/Blog/MVC/Model/blogAction.php";
+  include($address);*/
   
   if(isset($_SESSION['username'])){
 

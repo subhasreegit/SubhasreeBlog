@@ -1,20 +1,24 @@
 <?php
-    session_start();
-  //include("./blogAction.php");
- /* $address = "/var/www/html/Blog/MVC/Model/blogAction.php";
-  include($address);*/
-  require '../../vendor/autoload.php';
-  use Model\blogAction.php;
+  
+  //session start  
+  session_start();
+  $address = "/var/www/html/Blog/MVC/Model/blogAction.php";
+  include($address);
 
-  if(isset($_SESSION['ID'])){
+  if(isset($_SESSION['ID'])) {
 
-  } else{
-        header('Location:./LogInDetails.php'); //redirect to the log in page
+  } 
+  else {
+
+    //redirect to the log in page
+    header('Location:./LogInDetails.php'); 
   }
 
-  $logInObj = new blogAction(); //the object of blogaction classs
+  //the object of blogaction classs
+  $logInObj = new blogAction(); 
 
-  $personaldata = $logInObj-> mydetails($_SESSION['ID']); //It returns the auther details
+  //It returns the auther details
+  $personaldata = $logInObj-> mydetails($_SESSION['ID']); 
   ?>
   <html>
     <head>
@@ -24,6 +28,7 @@
     <body>
     <div class = "container">
       <div class = "Header">
+        <h1>SURE!!!</h1>
         <a href="../View/myBlog.php"><button>Back</button></a>
         <a href="../Controller/logout.php"><button>Log out</button></a>
       </div>

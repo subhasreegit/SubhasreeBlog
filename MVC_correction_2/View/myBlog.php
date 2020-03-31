@@ -1,17 +1,15 @@
 <?php
     session_start();
-  //include("./blogAction.php");
-  /*$address = "/var/www/html/Blog/MVC/Model/blogAction.php";
-  include($address);*/
+  $address = "/var/www/html/Blog/MVC/Model/blogAction.php";
+  include($address);
 
-  require '../../vendor/autoload.php';
-  use Model\blogAction.php;
+  if(isset($_SESSION['ID'])) {
+  } 
+  else {
 
-  if(isset($_SESSION['ID'])){
-
-  } else{
-        header('Location:../View/LogInDetails.php');
-    }?>
+    //it will redirect the page to the 
+    header('Location:../View/LogInDetails.php');
+  }?>
   <html>
     <head>
       <title> My Blog </title>
@@ -36,13 +34,18 @@
         //here this function returns the auther details
         $personaldata = $logInObj-> mydetails($_SESSION['ID']);
         if($blogData) {
-          foreach($blogData as $key => $value) {
+          foreach($blogData as $key => $value) {?>
+            <div class = "contentbody">
+              <?php
 
             //display the picture of the auther
             $logInObj-> imageView($_SESSION['ID']);
             echo "<br>";
             foreach($personaldata as $key1 => $value1) {
-              echo $value1['FirstName'] . " " . $value1['LastName'] . "<br>";
+              echo $value1['FirstName'] . " " . $value1['LastName'] . "<br>" . "<br>";
+
+              //shows the picture of the blog 
+              $logInObj-> BlogImageView($value['BlogId']);
               echo "Title:" . " " . $value['Title'] . "<br>" . "<br>";?>
               <form action = "../Controller/test.php" method="POST" enctype="multipart/form-data">
                 <input type = "hidden" name = "action" id = "action" value = "<?php echo $value['BlogId']; ?>">
@@ -51,7 +54,9 @@
                 <input type = "submit" name = "Delete" id = "Delete" value = "Delete Post">
               </form>
             <?php 
-            }
+            }?>
+          </div>
+          <?php
           }
         }?>
       </div>

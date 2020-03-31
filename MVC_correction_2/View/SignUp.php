@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Sign up/Regester yourself</title>
     <link rel = "stylesheet" type = "text/css" href = "../Css/SignUpPageDesign.css">
+    <script src = "../Controller/regesterDetailsCheck.js"></script>
 
   </head>
     <body>
@@ -30,7 +32,7 @@
               <input type = "password" name = "PassWord" id = "PassWord" placeholder = "PASSWORD" required><br><br>
               <label> Re-enter your Password: </label><br>
               <input type = "password" name = "RePassword" id = "RePassword" placeholder = "PASSWORD" required><br><br>
-              <input type = "submit" name = "Regester" id = "Regester" value = "Regester" >
+              <input type = "submit" name = "Regester" id = "Regester" value = "Regester" onclick = "validation()" >
             </form>
             <?php
               include("../Controller/RegesterDataView.php");

@@ -1,8 +1,11 @@
 <?php
   //$address = "/var/www/html/Blog/MVC/Model/blogAction.php";
-  include("./Model/blogAction.php");
+  //include("./Model/blogAction.php");
   //require '../../vendor/autoload.php';
   //include($address);
+  require '../../vendor/autoload.php';
+  use Model\blogAction.php;
+  
   
 ?>
 

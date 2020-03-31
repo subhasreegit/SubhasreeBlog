@@ -1,14 +1,10 @@
 <?php
 
-  /*$address = "/var/www/html/Blog/MVC/Model/UserDataControl.php";
-  //include("../Model/UserDataControl.php");
-  include($address);*/
-
-  require '../../vendor/autoload.php';
-  use Model\UserDataControl.php;
+  $address = "/var/www/html/Blog/MVC/Model/UserDataControl.php";
+  include($address);
 
   /*
-  **Through this class the user desied actions will be performed.
+  **Through this class the user desied actions will be performed. and it inherited the userdata class
   */
 
   class blogAction extends UserData {
@@ -19,9 +15,15 @@
 
     public function BlogDataView($blogid) {
       $blogData = "select * from BlogData where BlogId = '$blogid'";
+
+      //here the Databaseconnection object is created
       $object = new DatabaseConnection ();
+
+      //The connection check function is called
       $resPonse1 = $object -> ConnectionCheck ( $blogData ); 
       $blogData = [];
+
+      //value is fetched
       while ( $blogDetail = mysqli_fetch_assoc ( $resPonse1 )) {
         $blogdata[] = $blogDetail;
       }
@@ -35,7 +37,11 @@
 
     public function editBlog($blogid,$title,$content) {
        $contentEntry = "update BlogData set Title ='$title', Content = '$content'  where BlogId = '$blogid'";
+
+       //the database connection object is made
       $object = new DatabaseConnection();      
+
+      //connectio check function is called
       $resPonse1 = $object -> ConnectionCheck($contentEntry);
       print_r ($resPonse1);
       if ($resPonse1) {
@@ -52,7 +58,11 @@
 
     public function deleteBlog($blogid) {
       $contentEntry = "delete from BlogData where BlogId = '$blogid'";
-      $object = new DatabaseConnection();      
+
+      //database connction object is created
+      $object = new DatabaseConnection();   
+
+      //connection check function is called   
       $resPonse1 = $object -> ConnectionCheck($contentEntry);
       print_r ($resPonse1);
       if ($resPonse1) {
