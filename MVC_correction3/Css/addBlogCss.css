@@ -1,0 +1,49 @@
+body {
+    padding :0px;
+    margin :0px;
+    background-image:url("./f7982d09230dac9475ad3e18aa818d65.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.container {
+  width:100%;
+}
+
+.header {
+  background-color:black;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:10px;
+}
+
+.blogAdding {
+    margin:20px;
+    background-color:white;
+    width:500px;
+    float:left;
+    padding-left:20px;
+    padding-top:10px;
+    box-shadow:10px 10px;
+    margin-left: 400px
+}
+
+.header button {
+    float:right;
+    margin-left:-200px;
+    background-color:green;
+    color:white;
+    padding:10px;
+    margin:10px;
+    border:none;
+    margin-top:-20px;
+}
+
+#submit {
+    background-color:green;
+    color:white;
+    padding:10px;
+    border:none;
+    margin-top:20px;
+}

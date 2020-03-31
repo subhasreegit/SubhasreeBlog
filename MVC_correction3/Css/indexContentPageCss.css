@@ -1,0 +1,64 @@
+body {
+  margin :0px;
+  padding :0px;
+  background-image:url("./image-asset.jpeg");
+  background-repeat: no-repeat;
+  color:white;
+  background-size: 100% 100%;
+
+ }
+
+.container {
+  width : 100%;
+}
+
+.Header {
+  float : right;
+  text-align: center;
+  width:auto;
+}
+
+.heading {
+  background-color:black;
+  height:100px;
+  text-align: center;
+  width:1350px;
+  padding: 10px
+}
+
+.upper {
+  display:inline-block;
+}
+
+.Header button {
+  background-color: green;
+  color:white;
+  padding:10px;
+  margin:5px;
+  border : none;
+  margin-top:50px;
+  margin-right:30px;
+}
+
+.bodycontent {
+  background-color:white;
+  color:black;
+  width:400px;
+  height:auto;
+  margin:20px;
+  padding:15px;
+  box-shadow:10px 10px;
+}
+
+.pdata {
+  display:inline-block;
+}
+
+.blog button {
+  padding:8px;
+  margin:10px;
+  color:white;
+  background-color:green;
+  border:none;
+}
+
