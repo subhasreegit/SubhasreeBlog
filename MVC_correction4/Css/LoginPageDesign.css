@@ -1,0 +1,48 @@
+body{
+  background-image:url("./photo-1486312338219-ce68d2c6f44d.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.container{
+  width:100px;
+  height:100px;
+}
+.Login{
+  height:300px;
+  width:400px;
+  background-color:white;
+  padding:5px;
+  margin-left:500px;
+  box-shadow:10px 10px;
+  border-radius: 25px;
+  padding-left:30px;
+  margin-top:100px;
+}
+
+.header {
+  text-align: center;
+  color:white;
+  background-color: black;
+  width:1300px;
+  margin-left: 20px;
+  height:80px;
+  padding-top:10px;
+
+}
+
+p{
+  font-size:40px;
+  text-align:center;
+}
+
+label{
+  font-size:20px;
+}
+
+#LogIn{
+  border:none;
+  background-color:green;
+  color:white;
+  height:30px;
+  padding:10px;
+}
