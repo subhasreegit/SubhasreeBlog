@@ -1,0 +1,42 @@
+body{  
+  background-image:url("./Laptop_picture_with_notepad.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.container{ 
+  width:100px;
+  height:100px;  
+}
+.Details{
+  height:730px;
+  width:350px;
+  background-color:white;
+  padding:50px;
+  margin-left:500px;
+  margin-bottom:50px; 
+  box-shadow:10px 10px;
+  border-radius: 25px;
+}
+p{
+  color:white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size:40px;
+  text-align:center;
+}
+label{
+  font-size:20px;
+}
+#Regester{
+  background-color:green;
+  color:white;
+  padding:5px;
+  border-radius:none;
+  width:150px;
+}
+.Header {
+  background-color:black  ;
+}
+.Footer     {
+  background-color:black  ;
+}
+
